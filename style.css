@@ -128,7 +128,7 @@ body {
 
 .section-heading{
     font-weight: 600;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     text-decoration: underline;
 }
 
