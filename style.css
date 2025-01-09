@@ -1,0 +1,230 @@
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+.container-fluid{
+    background-color: var(--primary-color);
+}
+
+.section-padding{
+    margin: 40px;
+}
+
+.container {
+    width: 100%;
+    padding: 0;
+}
+
+:root{
+--primary-color:#eeede9;
+--color-white:#ffffff;
+--color-black:#000000;
+}
+
+/* Left side: Logo */
+.logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 20px;
+}
+
+/* Center: Menu items */
+.menu {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.navbar-item {
+    list-style-type: none;
+    display: flex;
+    gap: 25px;
+}
+
+.navbar-item {
+    font-size: 1.2rem;
+    margin: 0;
+    display: inline;
+    padding: 10px;
+    text-transform: capitalize;
+    font-weight: 600;
+    letter-spacing: 1px;
+    }
+
+.nav-item a{
+        color :var(--color-black);
+    }
+
+ .navbar-nav {
+            flex-direction: row;
+     }
+    
+.navbar-nav li {
+            padding: 0 10px;
+        }
+    
+.navbar-toggler {
+            border: none;
+            background: transparent;
+        }
+
+/* Right side: Icons */
+.icons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+    padding-right: 20px;
+}
+
+.icons i {
+    font-size: 20px;
+    cursor: pointer;
+    color: var(--color-black) !important;
+}
+
+
+/* second-section */
+
+.mega-menu-section{
+    background-color :var(--color-white);
+    padding:20px;
+}
+
+.menu-list{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.menu-list li{
+    font-weight: 600;
+}
+
+/* main-content */
+
+.carousel-item img{
+    background-size:70% !important;
+}
+
+.my-btn{
+ background-color:var(--color-black);
+ color: var(--color-white);
+ width: 80%;
+ border: 0;
+ border-radius: 1rem;
+ padding: 18px;
+
+}
+
+.my-btn:hover{
+    background-color:var(--color-white);
+    color: var(--color-black);
+}
+
+.section-heading{
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.card-img-first {
+    background-image: url('images/laptop-beach.jpg');
+    background-size: cover;
+    background-position: 50% 50% !important;
+    height: 650px;
+    border-radius :.4rem;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.card-img-sec 
+{
+    background-image: url('images/teach-abroad.jpg');
+    background-size: cover;
+    background-position: 50% 50% !important;
+    height: 650px;
+    position: relative;
+    border-radius: .4rem;
+    
+}
+
+ .card-content{
+    color: var(--color-white);
+    background-color: var(--color-black);
+    padding: 16px;
+    border-radius: .5rem;
+    position: absolute;
+    margin:20px;
+    top: 50%;
+    text-align: center;
+ }
+
+ .card-title{
+    font-weight: 600;
+    font-size :1.5rem;
+    padding: 1rem;
+ }
+
+ .content-para{
+    text-align: left;
+    padding: 20px;
+ }
+
+ .card-btn{
+    margin: auto;
+    padding: 12px 20px;
+    width: 50%;
+    border :none;
+    border-radius:12px;
+    margin: 20px;     
+ }
+
+
+/* responsivness */
+
+@media (max-width: 576px){
+    .my-btn{
+        text-align: center;
+        margin-bottom:1rem;
+    }
+
+    .card-img-first,  .card-img-sec{
+        margin-bottom: 16px;
+        height: 400px;
+    }
+
+    .mega-menu-section{
+        display: none;
+    }
+
+    .section-heading{
+        font-size: 18px;
+        text-align: center;
+    }
+  .section-padding{
+    margin:10px;
+   }
+
+   .card-content{
+    top: 20%;
+   }
+   .card-title{
+    font-size: 16px;
+   }
+
+   .card-para{
+    font-size: 12px;
+   }
+
+   .card-btn{
+    width: 80%;
+   }
+}
+
+
